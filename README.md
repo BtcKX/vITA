@@ -8,8 +8,11 @@
            ▐                ▐        ▐    ▐     ▐        
 </pre>
 
-***Hier findest du das Unterrichtsmaterial, das wir im Unterricht behandelt haben und behandeln sollen.***
-***Die Materialien sind jeweils nach dem Namen des Dozenten und dem Datum des Schulungstages gegliedert.***
+***01_Demo*** = Codes aus dem Unterricht
+***03_EigeneProjekte*** = Anwendung und Erweiterungen der Codes aus dem Unterricht
+
+*Hier findest du das Unterrichtsmaterial, das wir im Unterricht behandelt haben und behandeln sollen.*
+*Die Materialien sind jeweils nach dem Namen des Dozenten und dem Datum des Schulungstages gegliedert.*
 
 <pre>
  .----------------.  .----------------.  .----------------. 

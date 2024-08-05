@@ -8,9 +8,8 @@
            ▐                ▐        ▐    ▐     ▐        
 </pre>
 
-**Hier findest du das Unterrichtsmaterial, das wir im Unterricht behandelt haben und behandeln sollen.**
-
-**Die Materialien sind jeweils nach dem Namen des Dozenten und dem Datum des Schulungstages gegliedert.**
+***Hier findest du das Unterrichtsmaterial, das wir im Unterricht behandelt haben und behandeln sollen.***
+***Die Materialien sind jeweils nach dem Namen des Dozenten und dem Datum des Schulungstages gegliedert.***
 
 <pre>
  .----------------.  .----------------.  .----------------. 

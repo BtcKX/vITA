@@ -3,15 +3,10 @@ body {
     font-family: Arial, Helvetica, sans-serif; /* Schriftart für gesamten Body */
 }
 
-h1, h3, h4, h5, h6 {
-    color: rgb(238, 134, 36); /* Farbe der h-Tags */
+h1, h2, h3, h4, h5, h6 {
+    color: red; /* Farbe der h-Tags */
     text-align: center; /* Zentriert h-Tags */
     
-}
-
-h2 {
-    color: black;
-    text-align: center;
 }
 
 p {
@@ -42,17 +37,9 @@ button {
 }
 
 button:hover {
-    background-color: rgba(238, 134, 36, 0.945);
+    background-color: yellow;
 }
 
 button:active {
     color: red;
 }
-
-.logo {
-    background: left / cover url('/03_EigeneProjekte/Bilder/logo.png');
-    display: flex;
-    margin: 0 auto;
-    width: 350px;
-    height: 100px;
-  }

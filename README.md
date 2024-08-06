@@ -8,7 +8,7 @@
 </pre>
 
 *Hier findest du Material aus dem Unterricht und mehr.*<br>
-*Die Materialien sind mit Namen des Dozenten und dem Datum des Schulungstages gegliedert*
+*Die Lernmaterialien sind mit Namen des Dozenten und dem Datum des Schulungstages gegliedert*
 
 ***01_Demo*** = Codes aus dem Unterricht<br>
 ***02_Aufgaben*** = Übungs- / Hausaufgaben<br>

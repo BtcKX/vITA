@@ -1,0 +1,51 @@
+.tiere {
+    list-style-type: circle;
+}
+
+.computer {
+    list-style-type: lower-alpha;
+}
+
+.mahlzeit1 {
+    list-style-type: circle;
+}
+
+.mahlzeit2 {
+    list-style-type: square;
+}
+
+.restaurant {
+    list-style-type: circle;
+}
+
+.reiseziele {
+    list-style-type: square;
+}
+
+#tab1 {
+    text-align: center;
+    border: 5px orange solid;
+    width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th {
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+}
+
+.mark1-1 {
+    color: white;
+    background-color: orange;
+}
+
+.mark1-2 {
+    color: white;
+    background-color: grey;
+}
+

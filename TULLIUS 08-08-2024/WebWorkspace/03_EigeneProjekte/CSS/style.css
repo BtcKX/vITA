@@ -1,5 +1,6 @@
 body {
     background-color: grey; /* Body Hintergrundfarbe */
+<<<<<<< HEAD
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Schriftart für gesamten Body */
 }
 
@@ -7,6 +8,14 @@ h1 {
     color: rgb(238, 134, 36);
     background-color: rgba(255, 255, 255, 0.7);
     text-align: center;
+=======
+    font-family: Arial, Helvetica, sans-serif; /* Schriftart für gesamten Body */
+}
+
+h1, h3, h4, h5, h6 {
+    color: rgb(238, 134, 36); /* Farbe der h-Tags */
+    text-align: center; /* Zentriert h-Tags */
+>>>>>>> 0f85f16fe2bcc4455f14e23074caafffee3496b4
     
 }
 
@@ -15,6 +24,7 @@ h2 {
     text-align: center;
 }
 
+<<<<<<< HEAD
 h3 {
     color: white;
     background-color: rgb(238, 134, 36);
@@ -26,6 +36,8 @@ h4, h5, h6 {
     text-align: center; /* Zentriert h-Tags */
 }
 
+=======
+>>>>>>> 0f85f16fe2bcc4455f14e23074caafffee3496b4
 p {
     color: white; /* Farbe der p-Tags */
     text-align: center; /* Zentriert alle p-Tags */
@@ -39,7 +51,11 @@ a {
     font-weight: bold; /*Alle a-Tags werden fett geschrieben*/
 }
 
+<<<<<<< HEAD
 .mainimg {
+=======
+img {
+>>>>>>> 0f85f16fe2bcc4455f14e23074caafffee3496b4
     display: block; /* Macht das Bild zu einem Block-Element */
     margin: 0 auto; /* Zentriert das Bild */
     width: 400px; /* Feste Breite für das Bild */
@@ -67,6 +83,7 @@ button:active {
     margin: 0 auto;
     width: 350px;
     height: 100px;
+<<<<<<< HEAD
   }
 
 table {
@@ -100,3 +117,6 @@ td {
     width: 300px;
     height: 120px;
 }
+=======
+  }
+>>>>>>> 0f85f16fe2bcc4455f14e23074caafffee3496b4

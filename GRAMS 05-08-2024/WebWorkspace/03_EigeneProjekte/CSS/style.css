@@ -1,0 +1,58 @@
+body {
+    background-color: grey; /* Body Hintergrundfarbe */
+    font-family: Arial, Helvetica, sans-serif; /* Schriftart für gesamten Body */
+}
+
+h1, h3, h4, h5, h6 {
+    color: rgb(238, 134, 36); /* Farbe der h-Tags */
+    text-align: center; /* Zentriert h-Tags */
+    
+}
+
+h2 {
+    color: black;
+    text-align: center;
+}
+
+p {
+    color: white; /* Farbe der p-Tags */
+    text-align: center; /* Zentriert alle p-Tags */
+}
+
+a {
+    color: blue; /* Farbe für den Link */
+    text-align: center; /* Zentriert den Link */
+    display: block; /* Macht den Link zu einem Block-Element, damit text-align wirkt */
+    margin: 1px 0; /* Fügt Abstand oben und unten hinzu */
+    font-weight: bold; /*Alle a-Tags werden fett geschrieben*/
+}
+
+img {
+    display: block; /* Macht das Bild zu einem Block-Element */
+    margin: 0 auto; /* Zentriert das Bild */
+    width: 400px; /* Feste Breite für das Bild */
+    height: 200px; /* Feste Höhe für das Bild */
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    background-color: darkgrey;
+    
+}
+
+button:hover {
+    background-color: rgba(238, 134, 36, 0.945);
+}
+
+button:active {
+    color: red;
+}
+
+.logo {
+    background: left / cover url('/03_EigeneProjekte/Bilder/logo.png');
+    display: flex;
+    margin: 0 auto;
+    width: 350px;
+    height: 100px;
+  }

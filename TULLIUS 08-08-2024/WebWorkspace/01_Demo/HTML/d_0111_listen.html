@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listen</title>
+    <style>
+        /* list-style-type = disc, circle, square, none */
+        /* list-style-type = decimal, lower-alpha, upper-alpha, lower-roman, upper-roman ... */
+        
+        .zeit{
+            background-color: lightgray;
+        }
+
+        #liste1 {
+            color: red;
+            background-color: lightgreen;
+            border: 5px blue dotted;
+            display: block;
+        }
+
+        #liste2 li{
+            list-style-type: circle;
+
+        }
+
+        .wichtig{
+            border: 2px red solid;
+        }
+
+        .alpha{
+            list-style-type: upper-alpha;
+        }
+
+        .roman{
+            list-style-type: lower-alpha;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- ul>li*5 = Unsortierte Liste mit 5 list-items -->
+    <ul id="liste1" class="wichtig">
+        <li>Montag
+            <ul>
+                <li>morgens</li>
+                <li>mittags</li>
+                <li>abends
+                    <ol class="zeit">
+                        <li>bis 20 Uhr</li>
+                        <li>ab 20 Uhr</li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+        <li>Dienstag</li>
+        <li>Mittwoch</li>
+        <li>Donnerstag</li>
+        <li>Freitag</li>
+    </ul>
+
+    <ul id="liste2">
+        <li>Montag
+            <ul>
+                <li>morgens</li>
+                <li>mittags</li>
+                <li>abends
+                    <ul class="zeit">
+                        <li>bis 20 Uhr</li>
+                        <li>ab 20 Uhr</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Dienstag</li>
+        <li>Mittwoch</li>
+        <li>Donnerstag</li>
+        <li>Freitag</li>
+    </ul>
+
+    <!-- ol>li*5 = Sortierte Liste mit 5 list-items -->
+
+    <ol>
+        <li>Web
+            <ol class="alpha">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+            </ol>
+        </li>
+        <li>Java
+            <ol class="roman">
+                <li>Konsole</li>
+                <li>GUI</li>
+            </ol>
+        </li>
+    </ol>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero incidunt, delectus magni ab odio consequatur at fuga ullam atque quaerat omnis nemo voluptate dolorum sint. Laborum, a error! Nobis, pariatur!</p>
+    <ol start="3">
+        <li>DB</li>
+        <li>Netzwerk</li>
+        <li>Wiso</li>
+    </ol>
+
+</body>
+</html>

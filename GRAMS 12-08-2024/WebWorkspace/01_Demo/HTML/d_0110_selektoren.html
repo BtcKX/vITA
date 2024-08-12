@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <title>Selektoren</title>  
+    <style type="text/css">
+   
+    /* Typselektor*/
+    h1{
+        font-family: arial;
+    }
+   
+    /* Gruppenselektor */
+    h1, h2, h3{
+        color: red;
+    }
+   
+    /* Klassenselektor */
+    .wichtig {
+        text-decoration: underline;
+    }
+   
+    /* ID-Selektor */
+    #content {
+        color:blue;
+    }
+   
+    #inhalt{
+        text-decoration: none;
+    }
+   
+    /* Nachfahrenselektor
+        färbt nur unsortierte Listen, die innerhalb eines <td> folgen
+        es ist egal, ob noch ein weiteres element dawischen steht
+    */
+    td ul {
+        color: green;
+    }
+   
+    /* Kindselektor
+        färbt nur direkt nachfolgende Elemente ein
+    */
+    div>a{
+        font-size: 20px;
+    }
+   
+    /*benachbarter Geschwisterselektor
+        jeder 1. Absatz nach einer Überschrift
+    */
+    h1 + p {
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+   
+    <h1>Überschrift 1</h1>
+    <h2 class="wichtig">Überschrift 2</h2>
+    <h3>Überschrift 3</h3>
+    <p id="content">Hier steht Inhalt und noch mehr Inhalt</p>
+    <p>Und noch ein Absatz mit Inhalt.</p>
+ 
+   
+    <!-- Class vs. ID -->
+    <p id="inhalt" class="wichtig" >Und noch ein Absatz mit Inhalt und er Absatz hat eine ID und eine Klasse. Und die ID gewinnt!</p>
+ 
+       
+ 
+ 
+    <!-- ########## Optional, wenn dann html-Teil kopieren  ######## -->
+ 
+ 
+    <!-- Nachfahrenselektor -->
+    <table border = 1>
+        <tr>
+            <td>Inhalt der von Nachfahrenseletor unberührt bleibt</td>
+            <td>
+            <p>Erstmal noch Text zwischen td und ul</p>
+            <ul>
+                <li>Liste durch Nachfahrenselektor gefärbt</li>
+                <li>und noch ein Listenpunkt</li>
+            </ul></td>
+        </tr>
+    </table>
+   
+    <ul>
+        <li>Liste ist nicht grün</li>
+        <li>folgt nicht direkt auf ein "td"</li>
+    </ul>
+   
+    <!-- Kindselektor -->
+    <div>
+        <a href="www.wikipedia.de">www.wikipedia.de</a>
+    </div>
+    <div>
+        <p>Element zwischen div und p - also ist a kein direkter Nachfahre mehr <a href="www.wikipedia.de">www.wikipedia.de</a>
+        </p>
+    </div>
+    <div>
+        <p>a ist trotz diesem p noch ein direkter Nachfolger - a ist sozuagen das "Geschwisterchen" von p und das div ist die "Mutter"</p>
+        <a href="www.wikipedia.de">www.wikipedia.de</a>
+    </div>
+   
+    <!-- benachbarte Geschwisterselektoren -->
+        <div>
+        <h1>Eine Überschrift</h1>
+        <p>Dieser Absatz folgt direkt auf ein h1</p>
+        <p>Dieser Absatz folgt nicht direkt auf das h1 und ist deshalb kein direktes "Geschwisterchen"</p>
+    </div>  
+</body>
+</html>
+ 

@@ -1,17 +1,29 @@
 body {
     background-color: grey; /* Body Hintergrundfarbe */
-    font-family: Arial, Helvetica, sans-serif; /* Schriftart für gesamten Body */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Schriftart für gesamten Body */
 }
 
-h1, h3, h4, h5, h6 {
-    color: rgb(238, 134, 36); /* Farbe der h-Tags */
-    text-align: center; /* Zentriert h-Tags */
+h1 {
+    color: rgb(238, 134, 36);
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
     
 }
 
 h2 {
     color: black;
     text-align: center;
+}
+
+h3 {
+    color: white;
+    background-color: rgb(238, 134, 36);
+    text-align: center;
+}
+
+h4, h5, h6 {
+    color: rgb(238, 134, 36); /* Farbe der h-Tags */
+    text-align: center; /* Zentriert h-Tags */
 }
 
 p {
@@ -27,7 +39,7 @@ a {
     font-weight: bold; /*Alle a-Tags werden fett geschrieben*/
 }
 
-img {
+.mainimg {
     display: block; /* Macht das Bild zu einem Block-Element */
     margin: 0 auto; /* Zentriert das Bild */
     width: 400px; /* Feste Breite für das Bild */
@@ -56,3 +68,35 @@ button:active {
     width: 350px;
     height: 100px;
   }
+
+table {
+    text-align: center;
+    width: 100%;
+    height: 100px;
+}
+
+th {
+    color: white;
+    background-color: rgba(238, 134, 36, 0.945);
+    border: 1px black solid;
+    width: 50px;
+    height: 50px;
+}
+
+td {
+    border: 1px black solid;
+    background-color: white;
+}
+
+.imgicon {
+    width: 50px;
+    height: 50px;
+}
+
+.uimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 120px;
+}

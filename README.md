@@ -12,7 +12,7 @@
 ***01_Demo*** = Codes aus dem Unterricht<br>
 ***02_Aufgaben*** = Übungs- / Hausaufgaben<br>
 ***03_EigeneProjekte*** = Anwendung der Codes + Extras<br>
-
+ 
 <pre>
 ██████╗  █████╗  █████╗     ██████╗  ██████╗ ██████╗ ██╗  ██╗
 ██╔══██╗██╔══██╗██╔══██╗    ╚════██╗██╔═████╗╚════██╗██║  ██║

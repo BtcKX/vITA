@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Einstellungen */
+body {
+    background-color: grey; /* Body Hintergrundfarbe */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+    background: left / cover url('/03_EigeneProjekte/Bilder/logo.png');
+    width: 150px;
+    height: 50px;
+}
+
+/* Navigation */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: rgb(255, 255, 255); /* Linkfarbe */
+    text-align: center; /* Zentriert den Text im Link */
+    font-weight: bold; /* Fett geschrieben */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    padding: 10px 20px;
+    background-color: rgb(238, 134, 36);
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background-color: rgb(200, 100, 30);
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* H1 Einstellungen */
+h1 {
+    color: rgb(238, 134, 36);
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    padding-top: 25px;
+}
+
+h3 {
+    color: white;
+    background-color: rgb(238, 134, 36);
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* Caption Style */
+caption {
+    color: white;
+    background-color: rgb(238, 134, 36);
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* Paragraph Style */
+p {
+    color: white;
+    text-align: center;
+}
+
+/* Links Style */
+a {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+i {
+    font-size: smaller;
+}
+
+/* Button Style */
+button, .formularbtn {
+    display: block;
+    color: white;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0);
+    padding: 7px;
+    font-size: large;
+    border-radius: 10px;
+}
+
+button:hover, .formularbtn:hover {
+    background-color: rgba(238, 134, 36, 0.945);
+}
+
+button:active {
+    color: rgb(30, 255, 0);
+}
+
+/* Main Image */
+.mainimg {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Newsletter Image */
+.newsimg {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+}
+
+/* Table */
+table {
+    text-align: center;
+    width: 100%;
+    height: 100px;
+}
+
+th {
+    color: white;
+    background-color: rgba(238, 134, 36, 0.945);
+    border: 1px black solid;
+    width: 50px;
+    height: 50px;
+}
+
+td {
+    border: 1px black solid;
+    background-color: white;
+}
+
+/* Image Icon */
+.imgicon {
+    width: 50px;
+    height: 50px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgba(238, 134, 36, 0.945);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+.info {
+    padding: 5px;
+    width: 200px;
+}
+
+label {
+    display: block;
+    text-align: center;
+}
+
+/* AGB Text */
+.agbtxt {
+    text-align: center;
+    font-size: 10px;
+}
+
+/* Footer Image */
+.footerimg {
+    display: block;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+/* Inhaltsverzeichnis */
+.inhaltsvz {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.inhaltsvz a {
+    color: rgb(29, 4, 255);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    text-align: center;
+    color: rgba(238, 134, 36, 0.945);
+    font-weight: bold;
+}
+
+section {
+    padding: 15px;
+}

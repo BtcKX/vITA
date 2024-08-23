@@ -1,3 +1,4 @@
+/* Universal-Selektor */
 * {
     margin: 0;
     padding: 0;
@@ -71,7 +72,7 @@ h1 {
 h2 {
     color: black;
     text-align: center;
-    padding-top: 25px;
+    padding-top: 45px;
 }
 
 h3 {
@@ -96,6 +97,8 @@ caption {
 p {
     color: white;
     text-align: center;
+    padding-top: 25px;
+    padding-bottom: 15px;
 }
 
 /* Links Style */
@@ -144,7 +147,12 @@ button:active {
     height: 200px;
 }
 
-/* Table */
+.uimg{
+    display: block;
+    margin: 0 auto;
+}
+
+/* Table Style */
 table {
     text-align: center;
     width: 100%;
@@ -170,7 +178,7 @@ td {
     height: 50px;
 }
 
-/* Form */
+/* Form Style */
 form {
     display: flex;
     flex-direction: column;
@@ -187,6 +195,7 @@ form {
     width: 200px;
 }
 
+/* Label Style */
 label {
     display: block;
     text-align: center;
@@ -218,14 +227,15 @@ label {
     text-decoration: none;
 }
 
+/* Footer Style */
 footer {
     background-color: rgba(255, 255, 255, 0.7);
-    padding: 15px;
     text-align: center;
     color: rgba(238, 134, 36, 0.945);
     font-weight: bold;
 }
 
+/* Section Style */
 section {
-    padding: 15px;
+    padding-top: 15px;
 }

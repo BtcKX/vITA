@@ -1,4 +1,3 @@
-/* Allgemeine Stile */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -110,12 +109,6 @@ main .section {
     animation: grow 2s forwards;
 }
 
-/* Skill progress animation */
-@keyframes grow {
-    from { width: 0%; }
-    to { width: 90%; }
-}
-
 .progress-bar.js {
     background-color: #ffe600;
     animation-delay: 1s;
@@ -164,12 +157,22 @@ button:hover {
     background-color: #4fcf35a1;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
     background-color: #000000;
     color: white;
+}
+
+#terminal-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    color: #4fcf35;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+    animation: blinkCursor 0.8s steps(1) infinite;
 }
 
 /* Animationen */
@@ -188,18 +191,12 @@ footer {
     to { transform: scale(1); opacity: 1; }
 }
 
-#terminal-text {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 24px;
-    color: #4fcf35;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid;
-    animation: blinkCursor 0.8s steps(1) infinite;
-}
-
 @keyframes blinkCursor {
     from { border-color: rgba(255, 255, 255, 0); }
     to { border-color: white; }
+}
+
+@keyframes grow {
+    from { width: 0%; }
+    to { width: 90%; }
 }

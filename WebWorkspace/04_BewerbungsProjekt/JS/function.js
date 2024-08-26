@@ -1,4 +1,4 @@
-// Terminal Text Animation
+// Header Terminal Text Animation
 const textArray = ["Willkommen auf meiner Seite", "Ich bin KX", "Jetzt Kontakt aufnehmen"];
 let textIndex = 0;
 let charIndex = 0;
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(typeText, typingSpeed);
 });
 
-// Smooth Scroll for Navigation Links
+// Navigationsbar Smooth Anchor
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -47,7 +47,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-// Form Validation
+// Kontaktformular Validierung
 document.getElementById('contact-form').addEventListener('submit', function(e) {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;

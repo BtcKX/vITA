@@ -3,22 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine IT Bewerbungswebseite</title>
-    <link rel="stylesheet" href="\04_BewerbungsProjekt\CSS\style.css">
+    <title>Mein IT Portfolio</title>
+    <link rel="stylesheet" href="\04_BewerbungsProjekt\CSS\DEMOstyle.css">
 </head>
 <body>
+    <!-- Anker für den Scroll-to-Top Button -->
+    <a id="top"></a>
+    
     <header>
         <nav>
             <ul>
+<<<<<<< HEAD:WebWorkspace/04_BewerbungsProjekt/HTML/bewerbungswebseite.html
                 <li><a href="#steckbrief">Steckbrief</a></li>
+=======
+>>>>>>> fef55225c27968696fd20d7c84afc8cd4269e7bb:WebWorkspace/04_BewerbungsProjekt/HTML/DEMOportfolio.html
                 <li><a href="#skills">Fähigkeiten</a></li>
+                <li><a href="#steckbrief">Steckbrief</a></li>
                 <li><a href="#kontakt">Kontakt</a></li>
             </ul>
         </nav>
+<<<<<<< HEAD:WebWorkspace/04_BewerbungsProjekt/HTML/bewerbungswebseite.html
         <div class="hero">
+=======
+        <div class="header">
+            <!-- Hier das Terminal-Text-Element mit dem Zeichen ">" zu Beginn -->
+>>>>>>> fef55225c27968696fd20d7c84afc8cd4269e7bb:WebWorkspace/04_BewerbungsProjekt/HTML/DEMOportfolio.html
             <h1><span id="terminal-text">&gt;</span></h1>
             <p>IT-Enthusiast, Entwickler und auf der Suche nach neuen Herausforderungen.</p>
-            <a href="#kontakt" class="cta-btn">Kontakt aufnehmen</a>
+            <a href="#kontakt" class="kontakt-btn">Kontakt aufnehmen</a>
         </div>
     </header>
 
@@ -28,22 +40,26 @@
             <div class="skills-container">
                 <div class="skill-bar">
                     <h3>CySec / OpSec</h3>
-                    <div class="progress"><div class="progress-bar html-css"></div></div>
+                    <div class="progress"><div class="progress-bar cysec"></div></div>
+                    <p class="skill-text">Schutz von IT-Systemen vor Bedrohungen, Schwachstellen analysieren, Angriffe abwehren und Sicherheitsrichtlinien implementieren.</p>
                 </div>
                 <div class="skill-bar">
                     <h3>Python</h3>
-                    <div class="progress"><div class="progress-bar js"></div></div>
+                    <div class="progress"><div class="progress-bar python"></div></div>
+                    <p class="skill-text">Programmierung und Automatisierung komplexer Aufgaben, effiziente Skripterstellung  mit vielseitiger, moderner Sprache.</p>
                 </div>
                 <div class="skill-bar">
                     <h3>Linux</h3>
-                    <div class="progress"><div class="progress-bar react"></div></div>
+                    <div class="progress"><div class="progress-bar linux"></div></div>
+                    <p class="skill-text">Verwaltung und Optimierung von Linux-basierten Systemen, Befehlszeilensteuerung, Skripterstellung und Systemadministration.</p>
                 </div>
             </div>
         </section>
+        
 
         <section id="steckbrief" class="section">
             <h2>Steckbrief</h2>
-            <article class="card">
+            <article class="steckbrief">
                 <img src="\04_BewerbungsProjekt\Bilder\security-icon.png" alt="Security Icon">
                 <div class="info">
                     <h3>KX</h3>
@@ -72,9 +88,11 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 BewerbungsProjekt. Alle Rechte vorbehalten.</p>
+        <p>&copy; 2024 Mein IT Portfolio. Alle Rechte vorbehalten.</p>
     </footer>
 
-    <script src="\04_BewerbungsProjekt\JS\function.js"></script>
+    <a href="#top" class="scroll-to-top">&#8679;</a> <!-- Pfeil-Feld zum Zurückscrollen -->
+
+    <script src="\04_BewerbungsProjekt\JS\DEMOfunction.js"></script>
 </body>
 </html>

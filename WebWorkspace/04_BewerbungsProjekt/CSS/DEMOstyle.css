@@ -5,11 +5,11 @@ body {
 }
 
 header {
-    background-image: url('/04_BewerbungsProjekt/Bilder/cysec.png');
+    background-image: url('https://www.pwc.com/us/en/services/consulting/cybersecurity-risk-regulatory/library/global-digital-trust-insights/dti-website-hero-banner-animated.gif');
     background-size: cover;
     color: #ffffff;
     text-align: center;
-    padding: 100px 20px;
+    padding: 50px 20px;
     position: relative;
 }
 
@@ -33,18 +33,18 @@ nav a:hover {
     color: #2bff00;
 }
 
-.hero h1 {
+.header h1 {
     font-size: 48px;
     animation: fadeInDown 2s ease;
 }
 
-.hero p {
+.header p {
     font-size: 24px;
     margin-top: 10px;
     animation: fadeInUp 2s ease;
 }
 
-.cta-btn {
+.kontakt-btn {
     background-color: #4fcf35d7;
     color: white;
     padding: 10px 20px;
@@ -57,7 +57,7 @@ nav a:hover {
     transition: background-color 0.3s;
 }
 
-.cta-btn:hover {
+.kontakt-btn:hover {
     background-color: #4fcf35a1;
 }
 
@@ -66,7 +66,7 @@ main .section {
     text-align: center;
 }
 
-.card {
+.steckbrief {
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -76,11 +76,37 @@ main .section {
     animation: fadeInUp 1s ease;
 }
 
-.card img {
+.steckbrief img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
+    padding-bottom: 20px;
 }
+
+/* Hintergrundbild nur für die Section #steckbrief */
+#steckbrief {
+    background-image: url('https://i.pinimg.com/originals/55/fe/31/55fe31608321d1104ea0596e8d12a458.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 90px;
+    color: white;
+    display: block;
+    text-align: center;
+    align-content: center;
+}
+
+.steckbrief {
+    align-items: center;
+    gap: 20px;
+}
+
+.info {
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Halbtransparenter Hintergrund für bessere Lesbarkeit */
+    padding: 10px;
+    border-radius: 5px;
+}
+
 
 .skills-container {
     display: flex;
@@ -96,6 +122,14 @@ main .section {
     margin-bottom: 10px;
 }
 
+.skill-text{
+    color: black;
+    border: 1px solid rgb(190, 190, 190);
+    background-color: rgb(214, 214, 214);
+    padding: 10px;
+    border-radius: 5px;
+}
+
 .progress {
     background-color: #ddd;
     border-radius: 5px;
@@ -109,12 +143,16 @@ main .section {
     animation: grow 2s forwards;
 }
 
+<<<<<<< HEAD:WebWorkspace/04_BewerbungsProjekt/CSS/style.css
 .progress-bar.js {
+=======
+.progress-bar.python {
+>>>>>>> fef55225c27968696fd20d7c84afc8cd4269e7bb:WebWorkspace/04_BewerbungsProjekt/CSS/DEMOstyle.css
     background-color: #ffe600;
     animation-delay: 1s;
 }
 
-.progress-bar.react {
+.progress-bar.linux {
     background-color: #d400ff;
     animation-delay: 2s;
 }
@@ -171,11 +209,66 @@ footer {
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
+<<<<<<< HEAD:WebWorkspace/04_BewerbungsProjekt/CSS/style.css
     border-right: 2px solid;
     animation: blinkCursor 0.8s steps(1) infinite;
 }
 
 /* Animationen */
+=======
+    position: relative;
+}
+
+#terminal-text::after {
+    content: '|';
+    display: inline-block;
+    font-size: px;
+    color: #4fcf35;
+    animation: blinkCursor 0.8s steps(1) infinite;
+}
+
+/* Style für das Pfeil-Feld zum Zurückscrollen */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #4fcf35;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.scroll-to-top:hover {
+    background-color: #4fcf35a1;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+@keyframes blinkCursor {
+    0% {
+        opacity: 1;
+        color: white;
+    }
+    50% {
+        opacity: 0;
+        color: white;
+    }
+    100% {
+        opacity: 1;
+        color: white;
+    }
+}
+
+
+/* JS Animationen */
+>>>>>>> fef55225c27968696fd20d7c84afc8cd4269e7bb:WebWorkspace/04_BewerbungsProjekt/CSS/DEMOstyle.css
 @keyframes fadeInDown {
     from { opacity: 0; transform: translateY(-50px); }
     to { opacity: 1; transform: translateY(0); }
@@ -191,6 +284,7 @@ footer {
     to { transform: scale(1); opacity: 1; }
 }
 
+<<<<<<< HEAD:WebWorkspace/04_BewerbungsProjekt/CSS/style.css
 @keyframes blinkCursor {
     from { border-color: rgba(255, 255, 255, 0); }
     to { border-color: white; }
@@ -199,4 +293,10 @@ footer {
 @keyframes grow {
     from { width: 0%; }
     to { width: 90%; }
+=======
+/* Skill Balken Animation */
+@keyframes grow {
+    from { width: 0%; }
+    to { width: 100%; }
+>>>>>>> fef55225c27968696fd20d7c84afc8cd4269e7bb:WebWorkspace/04_BewerbungsProjekt/CSS/DEMOstyle.css
 }

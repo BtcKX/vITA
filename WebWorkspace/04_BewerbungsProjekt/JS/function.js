@@ -1,18 +1,12 @@
-<<<<<<< HEAD:WebWorkspace/04_BewerbungsProjekt/JS/function.js
-// Header Terminal Text Animation
-const textArray = ["Willkommen auf meiner Seite", "Ich bin KX", "Jetzt Kontakt aufnehmen"];
-=======
-// "Terminal Text" Animation
+// h1 "Terminal Text" Animation
+const terminalText = document.getElementById('terminal-text');
 const textArray = ["Willkommen auf meiner Webseite", "Ich bin KX", "Nehmen Sie gerne Kontakt auf"];
->>>>>>> fef55225c27968696fd20d7c84afc8cd4269e7bb:WebWorkspace/04_BewerbungsProjekt/JS/DEMOfunction.js
 let textIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
 const typingSpeed = 100;
 const deletingSpeed = 50;
 const pauseTime = 1500;
-
-const terminalText = document.getElementById('terminal-text');
 
 function typeText() {
     const currentText = textArray[textIndex];
@@ -42,16 +36,12 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(typeText, typingSpeed);
 });
 
-<<<<<<< HEAD:WebWorkspace/04_BewerbungsProjekt/JS/function.js
-// Navigationsbar Smooth Anchor
-=======
-// Funktion für sanftes Scrollen zu einem Anker
+// Funktion für sanftes Scrollen
 function smoothScroll(target) {
     document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
 }
 
 // Smooth Scroll für Navigationslinks
->>>>>>> fef55225c27968696fd20d7c84afc8cd4269e7bb:WebWorkspace/04_BewerbungsProjekt/JS/DEMOfunction.js
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -60,30 +50,26 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-<<<<<<< HEAD:WebWorkspace/04_BewerbungsProjekt/JS/function.js
-=======
-// Smooth Scroll für den "Kontakt aufnehmen"-Button
+// Smooth Scroll für "Kontakt aufnehmen" Button
 document.querySelector('.kontakt-btn').addEventListener('click', function(e) {
     e.preventDefault();
     smoothScroll('kontakt');
 });
 
-// Smooth Scroll für den Pfeil-Button
+// Smooth Scroll für Scroll-to-top Button
 document.querySelector('.scroll-to-top').addEventListener('click', function(e) {
     e.preventDefault();
     smoothScroll('top');
 });
 
->>>>>>> fef55225c27968696fd20d7c84afc8cd4269e7bb:WebWorkspace/04_BewerbungsProjekt/JS/DEMOfunction.js
 // Kontaktformular Validierung
-document.getElementById('contact-form').addEventListener('submit', function(e) {
+document.getElementById('kontakt').addEventListener('submit', function(e) {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+    const message = document.getElementById('nachricht').value;
 
     if (name === "" || email === "" || message === "") {
         e.preventDefault();
-        alert("Bitte alle Felder ausfüllen.");
     } else {
         alert("Vielen Dank für Ihre Nachricht!");
     }

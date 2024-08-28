@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-image: url('https://www.pwc.com/us/en/services/consulting/cybersecurity-risk-regulatory/library/global-digital-trust-insights/dti-website-hero-banner-animated.gif');
+    background-image: url('https://giffiles.alphacoders.com/221/221517.gif');
     background-size: cover;
     color: #ffffff;
     text-align: center;
@@ -18,7 +18,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 nav a {
@@ -34,14 +34,13 @@ nav a:hover {
 }
 
 .header h1 {
-    font-size: 48px;
-    animation: fadeInDown 2s ease;
+    font-size: 71112px;
 }
 
-.header p {
+.header h2 {
     font-size: 24px;
     margin-top: 10px;
-    animation: fadeInUp 2s ease;
+    animation: fadeIn 2s ease;
 }
 
 .kontakt-btn {
@@ -51,9 +50,9 @@ nav a:hover {
     border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 30px;
     display: inline-block;
-    animation: bounceIn 2s ease;
+    animation: bounce 2s ease;
     transition: background-color 0.3s;
 }
 
@@ -66,14 +65,62 @@ main .section {
     text-align: center;
 }
 
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Ermöglicht das Umfließen von Elementen bei Bedarf */
+    margin-top: 30px;
+    animation: bounce 2s ease;
+}
+
+.skill-bar {
+    width: 30%;
+    margin: 10px;
+}
+
+.skill-bar h3 {
+    margin-bottom: 10px;
+}
+
+.skill-text {
+    color: black;
+    border: 1px solid rgb(190, 190, 190);
+    background-color: rgb(214, 214, 214);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.progress {
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #0099ff;
+    width: 0%;
+    animation: grow 2s forwards;
+}
+
+.progress-bar.python {
+    background-color: #ffe600;
+    animation-delay: 1s;
+}
+
+.progress-bar.linux {
+    background-color: #d400ff;
+    animation-delay: 2s;
+}
+
 .steckbrief {
     background: white;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px #d400ff;
     display: inline-block;
     padding: 20px;
     margin-top: 20px;
-    animation: fadeInUp 1s ease;
+    animation: bounce 1s ease;
 }
 
 .steckbrief img {
@@ -96,65 +143,14 @@ main .section {
     align-content: center;
 }
 
-.steckbrief {
-    align-items: center;
-    gap: 20px;
-}
-
 .info {
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: Halbtransparenter Hintergrund für bessere Lesbarkeit */
+    background-color: rgba(0, 0, 0, 0.61);
     padding: 10px;
     border-radius: 5px;
 }
 
-
-.skills-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-}
-
-.skill-bar {
-    width: 30%;
-}
-
-.skill-bar h3 {
-    margin-bottom: 10px;
-}
-
-.skill-text{
-    color: black;
-    border: 1px solid rgb(190, 190, 190);
-    background-color: rgb(214, 214, 214);
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.progress {
-    background-color: #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.progress-bar {
-    height: 20px;
-    background-color: #0099ff;
-    width: 0%;
-    animation: grow 2s forwards;
-}
-
-<<<<<<< HEAD:WebWorkspace/04_BewerbungsProjekt/CSS/style.css
-.progress-bar.js {
-=======
-.progress-bar.python {
->>>>>>> fef55225c27968696fd20d7c84afc8cd4269e7bb:WebWorkspace/04_BewerbungsProjekt/CSS/DEMOstyle.css
-    background-color: #ffe600;
-    animation-delay: 1s;
-}
-
-.progress-bar.linux {
-    background-color: #d400ff;
-    animation-delay: 2s;
+.info h3 {
+    color: #4fcf35d7;
 }
 
 /* Kontaktformular */
@@ -166,10 +162,11 @@ form {
     display: inline-block;
     text-align: left;
     width: 300px;
-    margin: 0 auto;
+    margin-top: 20px;
+    animation: bounce 1s ease;
 }
 
-label, input, textarea {
+label {
     display: block;
     width: 100%;
     margin-bottom: 10px;
@@ -179,6 +176,9 @@ input, textarea {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 button {
@@ -209,25 +209,16 @@ footer {
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
-<<<<<<< HEAD:WebWorkspace/04_BewerbungsProjekt/CSS/style.css
-    border-right: 2px solid;
-    animation: blinkCursor 0.8s steps(1) infinite;
-}
-
-/* Animationen */
-=======
     position: relative;
+    padding: 50px 0px 30px 0px;
 }
 
 #terminal-text::after {
     content: '|';
-    display: inline-block;
-    font-size: px;
-    color: #4fcf35;
-    animation: blinkCursor 0.8s steps(1) infinite;
+    animation: blink 0.8s steps(1) infinite;
 }
 
-/* Style für das Pfeil-Feld zum Zurückscrollen */
+/* Style für Scroll-to-top Button */
 .scroll-to-top {
     position: fixed;
     bottom: 20px;
@@ -250,8 +241,20 @@ footer {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
+/* Media Query für kleinere Auflösungen (z.B. Handys, Tablets) */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column; /* Elemente werden untereinander angeordnet */
+        align-items: center;
+    }
 
-@keyframes blinkCursor {
+    .skill-bar {
+        width: 70%;
+    }
+}
+
+/* CSS Keyframes Animationen */
+@keyframes blink {
     0% {
         opacity: 1;
         color: white;
@@ -266,37 +269,17 @@ footer {
     }
 }
 
-
-/* JS Animationen */
->>>>>>> fef55225c27968696fd20d7c84afc8cd4269e7bb:WebWorkspace/04_BewerbungsProjekt/CSS/DEMOstyle.css
-@keyframes fadeInDown {
-    from { opacity: 0; transform: translateY(-50px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeInUp {
+@keyframes fadeIn {
     from { opacity: 0; transform: translateY(50px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes bounceIn {
+@keyframes bounce {
     from { transform: scale(0.8); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
 }
 
-<<<<<<< HEAD:WebWorkspace/04_BewerbungsProjekt/CSS/style.css
-@keyframes blinkCursor {
-    from { border-color: rgba(255, 255, 255, 0); }
-    to { border-color: white; }
-}
-
-@keyframes grow {
-    from { width: 0%; }
-    to { width: 90%; }
-=======
-/* Skill Balken Animation */
 @keyframes grow {
     from { width: 0%; }
     to { width: 100%; }
->>>>>>> fef55225c27968696fd20d7c84afc8cd4269e7bb:WebWorkspace/04_BewerbungsProjekt/CSS/DEMOstyle.css
 }

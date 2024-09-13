@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulare</title>
+    <style>
+        label {
+            display: block;
+        }
+
+        .inline{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- wenn bei method nichts eingetragen ist -get
+     get - in URL sichtbar. Nicht geeignet für sensible Daten
+     als Standart sollte post gewählt sein-->
+    <form action="#" method="post">
+        <h2>Anmeldeformular:</h2>
+        <!-- name-attribut wird für Auswertung mit PHP benötigt -->
+        <!-- id zum Stylen mit CSS oder zum Zugriff mit JS -->
+        <label for="vorname">Vorname:</label>
+        <input type="text" name="vorname" id="vorname">
+        <br><br>
+
+        <label for="geheim">Passwort:</label>
+        <input type="password" name="geheim" id="geheim">
+        <br><br>
+
+        <label for="email">Email-Adresse:</label>
+        <input type="email" name="mail" id="mail">
+        <br><br>
+
+        <label for="alter">Alter</label>
+        <input type="number" name="alter" id="alter" min="1" max="99">
+        <br><br>
+
+        <label for="date">Datum</label>
+        <input type="date" name="date" id="date">
+        <br><br>
+
+        <!-- radio-Button als Single-Choise-Auswahl wichtig -->
+        <label for="radio">Beruf:</label>
+        <input type="radio" name="beruf" id="beruf1" value="Anwendungse." checked><label for="beruf1" class="inline">AWE</label>
+        <input type="radio" name="beruf" id="beruf2" value="FiSi"><label for="beruf2" class="inline">FiSi</label>
+        <input type="radio" name="beruf" id="beruf3" value="anderer Beruf"><label for="beruf3" class="inline">Kaufmann</label>
+        <br><br>
+
+        <!-- Checkboxen als Multiple-Choise auswahl...
+        es können mehrere Werte gewählt werden, muss aber nicht
+        Gleicher Name vergeben wegen Zugehörigkeit
+        value hinterlegen für die spätere AUSWERTUNG-->
+        <label for="checkbox">Lieblingsfächer:</label>
+        <input type="checkbox" name="fach[]" id="wiso" value="wiso"><label for="wiso" class="inline">Wiso</label>
+        <input type="checkbox" name="fach[]" id="wiso" value="wiso" checked><label for="wiso" class="inline">Web</label>
+        <input type="checkbox" name="fach[]" id="wiso" value="wiso"><label for="wiso" class="inline">Net</label>
+        <br><br>
+
+        <label for="lieblingsfach">Lieblingsfach:</label>
+        <select name="lieblingsfach" id="lieblingsfach" size="1">
+            <option value="wiso">Wiso</option>
+            <option value="web">Web</option>
+            <option value="net">Net</option>
+        </select>
+        <br><br>
+
+        <label for="file">Lade Sie bitte alle Dokumente hoch:</label>
+        <input type="file" name="file" id="file">
+        <br><br>
+
+        <!-- <textarea name="" id="" col="30" rows="10"></textarea> NICHT BENUTZEN!
+        Einstellung über CSS-->
+        <label for="mitteilung">Ihre Nachricht:</label>
+        <textarea name="mitteilung" id="mitteilung">Hier Ihre Nachricht eingeben...</textarea>
+        <br><br>
+
+        <label for="checkbox">Bestätigen Sie bitte, dass wir Sie zuspamen dürfen.</label>
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <br><br>
+
+        <input type="submit" value="Formular absenden">
+    </form>
+</body>
+</html>

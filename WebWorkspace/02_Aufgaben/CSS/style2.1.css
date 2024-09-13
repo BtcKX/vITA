@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: white;
+}
+
+header {
+    text-align: center;
+    background-color: #181818;
+    color: white;
+    margin-bottom: 20px;
+}
+
+nav{
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.headerimg {
+    background-image: url('/02_Aufgaben/Bilder/layout2-headerimg.png'); /* Header-Bild */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerimg h1 {
+    font-size: 35px;
+    color: #f8a524;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #333;
+}
+
+article{
+    background-color: rgb(219, 219, 219);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+article h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #444;
+}
+
+article p {
+    font-size: 16px;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #181818;
+    color: white;
+    margin-top: 20px;
+}

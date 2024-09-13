@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style type="text/css">
+        .bild{
+            width: 200px;
+            height: 150px;
+            border-radius: 1px solid red;
+            margin: 1em;
+            float: left;
+        }
+        #bild1{
+            overflow: hidden;
+        }
+        #bild2{
+            overflow: scroll;
+        }
+        #bild3{
+            overflow: visible;
+        }
+        #bild4{
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="bild" id="bild1">
+        abgeschnitten mit hinnden<br>
+        <img src="\03_EigeneProjekte\Bilder\cryptoleiste.png" alt="Crypto Leiste">
+    </div>
+    <div class="bild" id="bild2">
+        scrollender mit scroll<br>
+        <img src="\03_EigeneProjekte\Bilder\cryptoleiste.png" alt="Crypto Leiste">
+    </div>
+    <div class="bild" id="bild3">
+        sichtbar mit visible<br>
+        <img src="\03_EigeneProjekte\Bilder\cryptoleiste.png" alt="Crypto Leiste">
+    </div>
+    <div class="bild" id="bild4">
+        beliebige mit auto<br>
+        <img src="\03_EigeneProjekte\Bilder\cryptoleiste.png" alt="Crypto Leiste">
+    </div>
+</body>
+</html>

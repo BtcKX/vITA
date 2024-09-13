@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein IT Portfolio</title>
+    <link rel="stylesheet" href="\04_BewerbungsProjekt\CSS\style.css">
+</head>
+<body>
+    <!-- Anchor für den Scroll-to-Top Button -->
+    <a id="top"></a>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#skills">Fähigkeiten</a></li>
+                <li><a href="#steckbrief">Steckbrief</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="header">
+            <!-- Hier das h1 Terminal-Text-Element mit dem Zeichen ">" in Unicode zu Beginn -->
+            <h1 id="terminal-text">&gt;</h1>
+            <h2>IT-Enthusiast, Entwickler und auf der Suche nach neuen Herausforderungen.</h2>
+            <a href="#kontakt" class="kontakt-btn">Kontakt aufnehmen</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="skills" class="section">
+            <h2>Meine Fähigkeiten</h2>
+            <div class="skills-container">
+                <div class="skill-bar">
+                    <h3>CySec / OpSec</h3>
+                    <div class="progress"><div class="progress-bar cysec"></div></div>
+                    <p class="skill-text">Schutz von IT-Systemen vor Bedrohungen, Schwachstellen analysieren, Angriffe abwehren und Sicherheitsrichtlinien implementieren.</p>
+                </div>
+                <div class="skill-bar">
+                    <h3>Python</h3>
+                    <div class="progress"><div class="progress-bar python"></div></div>
+                    <p class="skill-text">Programmierung und Automatisierung komplexer Aufgaben, effiziente Skripterstellung  mit vielseitiger, moderner Sprache.</p>
+                </div>
+                <div class="skill-bar">
+                    <h3>Linux</h3>
+                    <div class="progress"><div class="progress-bar linux"></div></div>
+                    <p class="skill-text">Verwaltung und Optimierung von Linux-basierten Systemen, Befehlszeilensteuerung, Skripterstellung und Systemadministration.</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="steckbrief" class="section">
+            <h2>Steckbrief</h2>
+            <article class="steckbrief">
+                <img src="\04_BewerbungsProjekt\Bilder\security-icon.png" alt="Security Icon">
+                <div class="info">
+                    <h3>KX</h3>
+                    <p><b>Alter:</b> 28</p>
+                    <p><b>Beruf:</b> IT-Student / Entwickler</p>
+                    <p><b>Standort:</b> Deutschland</p>
+                </div>
+            </article>
+        </section>
+
+        <section id="kontakt" class="section">
+            <h2>Kontaktformular</h2>
+            <form>
+                <label for="name">Dein Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Deine E-Mail-Adresse:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="nachricht">Deine Nachricht:</label>
+                <textarea id="nachricht" name="nachricht" required></textarea>
+
+                <button type="submit">Absenden</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mein IT Portfolio. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <!-- Scroll-to-top Button -->
+    <a href="#top" class="scroll-to-top">&#8679;</a> 
+
+    <!-- JS Verweis -->
+    <script src="\04_BewerbungsProjekt\JS\function.js"></script>
+</body>
+</html>

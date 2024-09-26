@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktformular</title>
+    <style>
+        form{
+            background-color: lightgrey;
+            padding: 10px;
+        }
+        label, input {
+            display: block;
+        }
+        #mail{
+            background-color: lightgreen;
+        }
+        input{
+            width: 200px;
+        }
+        /* durch [] wird ein Attribut angesprochen */
+        input[type=text],[type=submit], [type=reset]{
+            border-color: red;
+            border-radius: 5px;
+        }
+        textarea{
+            height: 100px;
+            width: 200px;
+            resize: horizontal;
+        }
+        #submit{
+            color: white;
+            background-color: black;
+        }
+        fieldset, legend{
+            background-color: beige;
+            border-radius: 5px;
+            border: black 2px solid;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+            <!-- Fieldset zum Gruppieren von Formularbereichen
+             Legend ist die Beschriftung für Fieldset -->
+        <fieldset>
+            <legend>Persönliche Angaben:</legend>
+                <label for="vorname">Vorname:</label>
+                <input type="text" name="vorname" id="vorname">
+                <label for="nachname">Nachname:</label>
+                <input type="text" name="nachname" id="nachname">
+        </fieldset>
+        <label for="email">E-Mail-Adresse:</label>
+        <input type="text" name="mail" id="mail">
+        <label for="nachricht">Nachricht:</label>
+        <textarea name="nachricht" id="nachricht"></textarea>
+        <input type="submit" value="Senden" id="submit">
+        <input type="reset" value="Löschen">
+    </form>
+</body>
+</html>
